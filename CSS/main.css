@@ -1,0 +1,148 @@
+@import url('https://fonts.googleapis.com/css?family=Oswald');
+
+
+html, body, main {
+    height: 100%;
+    width: 100%;
+
+}
+
+body {
+    background-color: ivory;
+}
+
+header, #stream-list{
+    margin: 50px auto 0;
+    width: 800px;
+    border: 1px solid #666;
+    background-color: burlywood;
+    padding: 15px;
+    padding-right: 0;
+}
+
+header {
+    border-radius: 10px 10px 0 0;
+}
+
+a:hover {
+    text-decoration: none;
+}
+
+h1 {
+    margin: auto 10px;
+    font-weight: 600;
+    color: white;
+    font-size: 52px;
+    vertical-align: middle;
+    text-shadow: #777 0 0px 15px;
+}
+
+.filters {
+    display: block;
+    text-align: right;
+    border: 1px solid #666;
+    border-right: 0;
+    border-radius: 15px 0 0 15px;
+    margin: 3px 0 3px auto;
+    color: saddlebrown;
+    background-color: white;
+    font-size: small;
+    padding-right: 3px;
+    padding-left: 3px;
+    text-transform: uppercase;
+    width: 33px;
+    height: 29px;
+    overflow: hidden;
+    transition: width 0.2s linear;
+}
+
+.filters:hover, .active {
+    width: 88px;
+    transition: width 0.2s linear;
+    background-color: lavender;
+    cursor: pointer;
+}
+
+.marker {
+    margin: 4px 2px;
+    display: inline-block;
+    float: right;
+    height: 19px;
+}
+
+.circle {
+    border: 1px black solid;
+    border-radius: 50%;
+    display: inline-block;
+    float: left;
+    margin: 4px 2px;
+    width: 19px;
+    height: 19px;
+}
+
+#all {
+    background-color: cornflowerblue;
+}
+
+#online {
+    background-color: lightgreen;
+}
+
+#offline {
+    background-color: indianred;
+}
+
+
+.filters span {
+    margin-right: 0;
+}
+
+#section1 {
+    margin: auto;
+}
+
+#stream-list {
+    padding-top: 5px;
+    padding-left: 0;
+    padding-bottom: 0;
+    background-color: lightsteelblue;
+    margin-top: 0;
+    margin-bottom: 50px;
+    border-top: 0;
+    min-height: 50px;
+ }
+
+div.stream-item {
+    margin: 7px auto;
+    padding-left: 0;
+    background-color: white;
+    width: 90%;
+    min-height: 100px;
+    border: 1px solid #444;
+    border-radius: 10px;
+}
+
+div.stream-item:hover {
+    box-shadow: 2px 2px 5px #444;
+}
+
+.hide {
+    display: none;
+}
+
+.stream-item img{
+    margin: 10px;
+    margin-left: 0;
+    height: 80px;
+    width: 80px;
+    border-radius: 50%;
+}
+
+.stream-item h2 {
+    color: #444444;
+}
+
+
+.stream-item.online {
+    background-color: #ecffd6;
+}
